@@ -5,7 +5,7 @@ html, body {
   padding: 0;
 }
 .container {
-	background-color: white;
+	background-color: #FFF;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@ html, body {
   flex-direction: column;
   background-color: #000639;
 }
-.input {
+.email {
   border-radius: 5px;
   border: solid 1px;
   height: 36px;
@@ -33,18 +33,18 @@ html, body {
   background-color: #5c6ac4;
   height: 40px;
   width: 100px;
-  color: white;
+  color: #FFF;
   font-weight: bold;
 }
 .motto {
-  font: 25px arial bold;
-  color: white;
+  font: 24px arial bold;
+  color: #FFF;
   text-align: center;
   margin-bottom: 10px;
 }
 .conditions, .endtext {
   font: 14px arial;
-  color: white;
+  color: #FFF;
   text-align: center;
   margin-top: 10px;
 }
@@ -53,4 +53,10 @@ html, body {
   color: #C23628;
   font-size: 12px;
   display: none;
+}
+.success {
+  margin: 5px 0px 0px ;
+  color: #7AB55C;;
+  font-size: 12px;
+  display: block;
 }
