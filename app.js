@@ -1,3 +1,5 @@
+"use strict";
+
 
 let check = document.querySelector('.shopify')
 check.addEventListener('submit', function(e) {
