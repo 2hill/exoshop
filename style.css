@@ -1,9 +1,56 @@
-text-color: #FFF;
-brand-dark: #000639;
-brand-light: #5c6ac4;
-success-color: #7AB55C;
-error-color: #C23628;
-
-base-font-size: 16px;
-title-font-size: 24px;
-field-status-font-size: 13px;
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+	background-color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test {
+  height: 250px;
+  width: 45%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000639;
+}
+.input {
+  border-radius: 5px;
+  border: solid 1px;
+  height: 36px;
+  width: 200px;
+  padding-left: 10px;
+}
+.button {
+  border-radius: 5px;
+  border: #000639 solid 1px;
+  background-color: #5c6ac4;
+  height: 40px;
+  width: 100px;
+  color: white;
+  font-weight: bold;
+}
+.motto {
+  font: 25px arial bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.conditions, .endtext {
+  font: 14px arial;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+.error {
+  margin: 5px 0px 0px ;
+  color: #C23628;
+  font-size: 12px;
+  display: none;
+}
