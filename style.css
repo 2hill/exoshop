@@ -20,7 +20,7 @@ html, body {
   flex-direction: column;
   background-color: #000639;
 }
-.email {
+#email {
   border-radius: 5px;
   border: solid 1px;
   height: 36px;
