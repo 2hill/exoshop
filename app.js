@@ -12,16 +12,3 @@ check.addEventListener('submit', function(e) {
     ? (error.style.display = "inline")
     : (success.style.display = "inline", error.remove());
 });
-
-/*check.addEventListener('submit', function(e) {
-  console.log(email.value)
-  e.preventDefault()
-  if (!regex.test(email.value)){
-    console.log("error")
-    error.style.display = "inline"}
-  else {
-    console.log("success")
-    success.style.display = "inline" ;
-    error.remove()
-     }
-});*/
