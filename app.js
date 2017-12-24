@@ -12,3 +12,9 @@ check.addEventListener('submit', function(e) {
     ? (error.style.display = "inline")
     : (success.style.display = "inline", error.remove());
 });
+
+email.onfocus = function() {
+  if (error.classList.contains('error')) {
+    error.classList.remove('error');
+  }
+};
