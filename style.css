@@ -1,3 +1,7 @@
+
+html * {
+    font-family: Helvetica !important;
+}
 html, body {
   height: 100%;
   width: 100%;
@@ -5,22 +9,36 @@ html, body {
   padding: 0;
 }
 .container {
-	background-color: #FFF;
+	background-color: #000639;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+hr {
+  width: 20%;
+  align: left;
+  color: #7AB55C;
+  margin-left: 0;
+  margin-right: 0;
 }
 .test {
   height: 250px;
   width: 45%;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items:flex-start;
   flex-direction: column;
-  background-color: #000639;
+
 }
 #email {
+  border-radius: 5px;
+  border: solid 1px;
+  height: 36px;
+  width: 200px;
+  padding-left: 10px;
+}
+#select {
   border-radius: 5px;
   border: solid 1px;
   height: 36px;
@@ -32,31 +50,40 @@ html, body {
   border: #000639 solid 1px;
   background-color: #5c6ac4;
   height: 40px;
-  width: 100px;
+  width: 100%;
   color: #FFF;
   font-weight: bold;
+  margin-top: 10px;
 }
 .motto {
-  font: 24px arial bold;
+  font: 24px bold;
   color: #FFF;
-  text-align: center;
+  text-align: left;
   margin-bottom: 10px;
 }
-.conditions, .endtext {
-  font: 14px arial;
+.conditions {
+  font: 16px;
   color: #FFF;
   text-align: center;
   margin-top: 10px;
+
+}
+.endtext {
+  font: 16px;
+  color: #FFF;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: underline;
 }
 .error {
   margin: 5px 0px 0px ;
   color: #C23628;
-  font-size: 12px;
+  font-size: 16px;
   display: none;
 }
 .success {
   margin: 5px 0px 0px ;
   color: #7AB55C;;
-  font-size: 12px;
+  font-size: 16px;
   display: none;
 }
