@@ -13,9 +13,11 @@ check.addEventListener('submit', function(e) {
     : (success.style.display = "inline", error.remove());
 });
 
-email.onfocus = function() {
-  if (error.classList.contains('error')) {
-    error.classList.remove('error');
+
+
+check.onfocus = function() {
+  if (this.classList.contains('error')) {
+    this.classList.remove('error');
     error.innerHTML = "";
   }
 };
