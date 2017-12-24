@@ -16,5 +16,6 @@ check.addEventListener('submit', function(e) {
 email.onfocus = function() {
   if (error.classList.contains('error')) {
     error.classList.remove('error');
+    error.innerHTML = "";
   }
 };
