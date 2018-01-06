@@ -12,12 +12,3 @@ check.addEventListener('submit', function(e) {
     ? (error.style.display = "inline")
     : (success.style.display = "inline", error.remove());
 });
-
-
-
-check.onfocus = function() {
-  if (this.classList.contains('error')) {
-    this.classList.remove('error');
-    error.innerHTML = "";
-  }
-};

@@ -11,25 +11,27 @@ html, body {
 .container {
 	background-color: #000639;
   height: 100%;
+  width: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-hr {
-  width: 20%;
-  align: left;
-  color: #7AB55C;
-  margin-left: 0;
-  margin-right: 0;
+  justify-content: center;
 }
 .test {
   height: 250px;
   width: 45%;
   margin: 0 auto;
   display: flex;
-  align-items:flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+hr {
+  width: 10%;
+  border-color: #7AB55C;
+  align-self: flex-start;
+  left: -12px;
 
+  margin: 0;
 }
 #email {
   border-radius: 5px;
@@ -44,6 +46,7 @@ hr {
   height: 36px;
   width: 200px;
   padding-left: 10px;
+  color: #7B7B7B;
 }
 .button {
   border-radius: 5px;
