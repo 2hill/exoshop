@@ -29,9 +29,7 @@ hr {
   width: 10%;
   border-color: #7AB55C;
   align-self: flex-start;
-  left: -12px;
-
-  margin: 0;
+  margin-left: 120px;
 }
 #email {
   border-radius: 5px;
