@@ -1,21 +1,23 @@
-
 html * {
-    font-family: Helvetica !important;
+  font-family: Helvetica !important;
 }
+
 html, body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
 }
+
 .container {
-	background-color: #000639;
+  background-color: #000639;
   height: 100%;
   width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .test {
   height: 250px;
   width: 45%;
@@ -25,12 +27,14 @@ html, body {
   align-items: center;
   flex-direction: column;
 }
+
 hr {
   width: 10%;
   border-color: #7AB55C;
   align-self: flex-start;
   margin-left: 120px;
 }
+
 #email {
   border-radius: 5px;
   border: solid 1px;
@@ -38,6 +42,7 @@ hr {
   width: 200px;
   padding-left: 10px;
 }
+
 #select {
   border-radius: 5px;
   border: solid 1px;
@@ -46,6 +51,7 @@ hr {
   padding-left: 10px;
   color: #7B7B7B;
 }
+
 .button {
   border-radius: 5px;
   border: #000639 solid 1px;
@@ -56,19 +62,21 @@ hr {
   font-weight: bold;
   margin-top: 10px;
 }
+
 .motto {
   font: 24px bold;
   color: #FFF;
   text-align: left;
   margin-bottom: 10px;
 }
+
 .conditions {
   font: 16px;
   color: #FFF;
   text-align: center;
   margin-top: 10px;
-
 }
+
 .endtext {
   font: 16px;
   color: #FFF;
@@ -76,27 +84,37 @@ hr {
   margin-top: 10px;
   text-decoration: underline;
 }
+
 .error {
-  margin: 5px 0px 0px ;
+  margin: 5px 0px 0px;
   color: #C23628;
   font-size: 16px;
   display: none;
 }
+
 .success {
-  margin: 5px 0px 0px ;
-  color: #7AB55C;;
+  margin: 5px 0px 0px;
+  color: #7AB55C;
+  ;
   font-size: 16px;
   display: none;
 }
 
-
-@media screen and (min-width: 980px) {
- .container {
-                width: 93%;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: row;
-            }
-  hr        {
-       align-self: center;
-}
+@media (max-width: 980px) {
+  .test {
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  hr {
+    align-self: center;
+    margin: 0 auto;
+  }
+  .motto {
+    width: 100%;
+    text-align: center;
+  }
+};
