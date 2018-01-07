@@ -35,7 +35,7 @@ hr {
   margin-left: 120px;
 }
 
-#email {
+#email, #select {
   border-radius: 5px;
   border: solid 1px;
   height: 36px;
@@ -44,18 +44,15 @@ hr {
 }
 
 #select {
-  border-radius: 5px;
-  border: solid 1px;
-  height: 36px;
-  width: 200px;
-  padding-left: 10px;
   color: #7B7B7B;
+  margin-left: 4px;
 }
 
 .button {
   border-radius: 5px;
   border: #000639 solid 1px;
   background-color: #5c6ac4;
+  padding: 0px;
   height: 40px;
   width: 100%;
   color: #FFF;
@@ -95,7 +92,6 @@ hr {
 .success {
   margin: 5px 0px 0px;
   color: #7AB55C;
-  ;
   font-size: 16px;
   display: none;
 }
@@ -105,16 +101,21 @@ hr {
     width: 45%;
     margin: 0 auto;
     display: flex;
-    align-self: center;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
   }
   hr {
-    align-self: center;
     margin: 0 auto;
   }
   .motto {
     width: 100%;
     text-align: center;
+  }
+  #email, #select {
+    width: 100%;
+  }
+  #email {
+    margin-bottom: 5px;
   }
 };
