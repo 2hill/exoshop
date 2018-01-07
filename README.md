@@ -1,3 +1,3 @@
-# newsletterDraft is a mockup of a newsletter. 
-Front-end problem for Shopify internship
+# Shopify's newsletter. 
+Front-end problem for Shopify internship (summer2018)
 # shopify
