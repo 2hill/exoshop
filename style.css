@@ -97,5 +97,6 @@ hr {
                 display: flex;
                 flex-direction: row;
             }
-
+  hr        {
+       align-self: center;
 }
