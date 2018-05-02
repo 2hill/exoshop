@@ -11,26 +11,33 @@
 <body>
   <div class="container">
     <div class="test">
-      <p class="motto">Stay up to date with ecommerce trends <br> with Shopify's newsletter</p>
+      <p class="motto">Stay up to date with ecommerce trends
+        <br> with Shopify's newsletter</p>
       <hr>
       <p class="conditions">Subscribe for free marketing tips</p>
       <form class="form" action="#" method="post">
         <input id="email" type="text" name="email" placeholder="Email Address" value="">
         <select id="select">
-            <option value="valeur1" selected>Interested in subscription</option>
-            <option value="valeur2">Interested in a trial</option>
-          </select>
+          <optgroup label="Interested in" selected>
+            <option value="valeur1">Marketing Tips</option>
+            <option value="valeur2">Other tips</option>
+          </optgroup>
+        </select>
         <br>
         <div class="error">Please enter a valid email address</div>
         <div class="success">Welcome onboard!</div>
         <br>
         <input class="button" type="submit" name="button" value="Sign up now">
       </form>
-      <br><br><br><br>
+      <br>
+      <br>
+      <br>
+      <br>
       <p class="endtext">Unsubscribe</p>
     </div>
   </div>
   <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 </body>
 
 </html>
