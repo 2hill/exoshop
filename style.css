@@ -37,10 +37,9 @@ select {
 }
 
 hr {
-  width: 10%;
+  width: 2rem;
   border-color: #7AB55C;
-  align-self: flex-start;
-  margin-left: 120px;
+  float: left;
 }
 
 #email, #select {
@@ -128,9 +127,9 @@ hr {
     flex-direction: column;
   }
   hr {
-    margin: 0 auto;
-  }
-  .motto {
+
+}
+  .motto, hr {
     width: 100%;
     text-align: center;
   }
