@@ -86,10 +86,14 @@ hr {
   margin-bottom: 10px;
 }
 
+.top {
+align-self: flex-start
+}
+
 .conditions {
   font: 16px;
   color: #FFF;
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
 }
 
