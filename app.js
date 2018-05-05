@@ -34,6 +34,6 @@ Ladda.bind('button[type=submit]');
 
 function fakeHttp() {
   setTimeout(function () {
-   $(".remove").replaceWith($("#thx"))
+  $(".remove").replaceWith($('#thx').show().css('display', 'flex'))
   }, 2000);
 }

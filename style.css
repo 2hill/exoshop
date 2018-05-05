@@ -91,6 +91,10 @@ align-self: center;
 }
 
 #thx {
+  font: 16px bold;
+  color: #FFF;
+  text-align: left;
+  margin-bottom: 10px;
   display: none;
 }
 
