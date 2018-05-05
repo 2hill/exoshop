@@ -14,31 +14,26 @@ let regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/
 (In general I use an if statement but here I wanted to experiment the ternary operator) */
 check.addEventListener('submit', function (e) {
   e.preventDefault()
-    !regex.test(email.value)
-    ?(error.style.display = "inline",
-      console.log(
-          "wrong format:", 
-          email.value, 
-          select.options[select.selectedIndex].text)) 
-    :(success.style.display = "inline",
-      console.log(
-          "valid format:",
-          email.value,
-          select.options[select.selectedIndex].text),
-          error.remove(), 
-          button.disabled = true)
+  !regex.test(email.value)
+  ?(error.style.display = "inline",
+    console.log(
+      "wrong format:", 
+      email.value, 
+      select.options[select.selectedIndex].text)) 
+  :(fakeHttp(),
+    console.log(
+      "valid format:",
+        email.value,
+        select.options[select.selectedIndex].text),
+        error.remove(), 
+        button.disabled = true)
 });
 
 // Simulating HTTP request using Ladda built-in loading indicators
 Ladda.bind('button[type=submit]');
 
-
-//  Jquery function to simulate loading state
-/*
-$('.button').on('click', function () {
-  let $this = $(this);
-  $this.button('loading');
+function fakeHttp() {
   setTimeout(function () {
-    $this.button('reset');
+   $(".remove").replaceWith($("#thx"))
   }, 2000);
-});  */
+}
