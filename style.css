@@ -2,14 +2,16 @@ html * {
   font-family: Helvetica !important;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-input, select {
+input,
+select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -50,7 +52,19 @@ hr {
 }
 
 #select {
-  color: #7B7B7B;
+  background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+  overflow: hidden;
+  width: 240px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #FFF;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  
 }
 
 .button {
@@ -120,10 +134,13 @@ hr {
     width: 100%;
     text-align: center;
   }
-  #email, #select {
+  #email,
+  #select {
     width: 100%;
   }
   #email {
     margin-bottom: 5px;
   }
-};
+}
+
+;
