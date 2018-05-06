@@ -19,7 +19,6 @@ check.addEventListener('submit', function (e) {
     console.log(
       "wrong format:", email.value, select.options[select.selectedIndex].text)) 
   :(fakeHttp(),
-    Ladda.bind('.ladda-button'),
     console.log(
       "valid format:", email.value, select.options[select.selectedIndex].text),
     error.remove(), 
@@ -30,8 +29,8 @@ check.addEventListener('submit', function (e) {
     
 let fakeHttp = function () {
   setTimeout(function () {
-    //Ladda.bind('.ladda-button', {timeout: 2000});
-          $(".remove").replaceWith($('#thx').show().css('display', 'flex'));
-          $(".motto span").text('commerce');
+    $(".remove").replaceWith($('#thx').show().css('display', 'flex'));
+    $(".motto span").text('commerce');
   }, 2000);
 }
+Ladda.bind('.ladda-button', {timeout: 2000});
