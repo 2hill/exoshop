@@ -25,6 +25,10 @@ check.addEventListener('submit', function (e) {
     button.disabled = true)
     });
     
+// button loader    
+let ladda = function() {Ladda.bind('.ladda-button', {timeout: 2000});}
+ladda();
+
 // Simulating HTTP request and Updating DOM
     
 let fakeHttp = function () {
@@ -33,4 +37,3 @@ let fakeHttp = function () {
     $(".motto span").text('commerce');
   }, 2000);
 }
-Ladda.bind('.ladda-button', {timeout: 2000});
