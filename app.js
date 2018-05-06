@@ -19,19 +19,18 @@ check.addEventListener('submit', function (e) {
     console.log(
       "wrong format:", email.value, select.options[select.selectedIndex].text)) 
   :(fakeHttp(),
+    Ladda.bind('.ladda-button'),
     console.log(
       "valid format:", email.value, select.options[select.selectedIndex].text),
     error.remove(), 
     button.disabled = true)
     });
     
-    // Simulating HTTP request and Updating DOM
+// Simulating HTTP request and Updating DOM
     
-    
-    
-    let fakeHttp = function () {
-        Ladda.bind('.ladda-button', {timeout: 2000});
-      setTimeout(function () {
+let fakeHttp = function () {
+  setTimeout(function () {
+    //Ladda.bind('.ladda-button', {timeout: 2000});
           $(".remove").replaceWith($('#thx').show().css('display', 'flex'));
           $(".motto span").text('commerce');
   }, 2000);
