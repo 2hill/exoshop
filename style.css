@@ -1,7 +1,6 @@
 html * {
   font-family: Helvetica !important;
 }
-
 html,
 body {
   height: 100%;
@@ -9,14 +8,15 @@ body {
   margin: 0;
   padding: 0;
 }
-
 input,
 select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+p {
+  margin-top: 0px; 
+}
 .container {
   background-color: #000639;
   height: 100%;
@@ -25,23 +25,24 @@ select {
   align-items: center;
   justify-content: center;
 }
-
+.top {
+  display: flex;
+  flex-direction: column;
+}
 .test {
   height: 250px;
   width: 45%;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-
 hr {
   width: 2rem;
   border-color: #7AB55C;
   float: left;
 }
-
 #email, #select {
   border-radius: 5px;
   border: solid 1px;
@@ -49,7 +50,6 @@ hr {
   width: 200px;
   padding-left: 10px;
 }
-
 #select {
   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
   overflow: hidden;
@@ -58,15 +58,12 @@ hr {
   -moz-border-radius: 5px;
   border-radius: 5px;
   background-color: #FFF;
-
   -moz-appearance: none;
   -webkit-appearance: none;
   text-indent: 0.01px;
   text-overflow: '';
-  
 }
-
-.button {
+.ladda-button {
   border-radius: 5px;
   border: #000639 solid 1px;
   background-color: #5c6ac4;
@@ -78,33 +75,26 @@ hr {
   margin-top: 10px;
   cursor: pointer;
 }
-
 .motto {
   font: 24px bold;
   color: #FFF;
   text-align: left;
   margin-bottom: 10px;
 }
-
-.top {
-align-self: center;
-}
-
 #thx {
   font: 16px bold;
   color: #FFF;
-  text-align: left;
   margin-bottom: 10px;
   display: none;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-
 .conditions {
   font: 16px;
   color: #FFF;
   text-align: left;
   margin-top: 10px;
 }
-
 .endtext {
   font: 16px;
   color: #FFF;
@@ -112,14 +102,12 @@ align-self: center;
   margin-top: 10px;
   text-decoration: underline;
 }
-
 .error {
   margin: 5px 0px 0px;
   color: #C23628;
   font-size: 16px;
   display: none;
 }
-
 .success {
   margin: 5px 0px 0px;
   color: #7AB55C;
@@ -128,7 +116,6 @@ align-self: center;
 }
 
 /* Responsive */
-
 @media (max-width: 980px) {
   .test {
     width: 45%;
@@ -138,9 +125,6 @@ align-self: center;
     justify-content: center;
     flex-direction: column;
   }
-  hr {
-
-}
   .motto, hr {
     width: 100%;
     text-align: center;
@@ -152,6 +136,4 @@ align-self: center;
   #email {
     margin-bottom: 5px;
   }
-}
-
-;
+};
