@@ -18,7 +18,7 @@ check.addEventListener('submit', function (e) {
   ?(error.style.display = "inline",
     console.log(
       "wrong format:", email.value, select.options[select.selectedIndex].text)) 
-  :(fakeHttp(),
+  : (ladda(), fakeHttp(),
     console.log(
       "valid format:", email.value, select.options[select.selectedIndex].text),
     error.remove(), 
@@ -27,7 +27,7 @@ check.addEventListener('submit', function (e) {
     
 // button loader    
 let ladda = function() {Ladda.bind('.ladda-button', {timeout: 2000});}
-ladda();
+
 
 // Simulating HTTP request and Updating DOM
     
