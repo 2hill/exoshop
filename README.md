@@ -1,0 +1,1 @@
+# exoshop: newsletter mockup
